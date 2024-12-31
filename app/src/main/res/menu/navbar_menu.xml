@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeNav"
+        android:enabled="true"
+        android:icon="@drawable/home"
+        android:title="@string/Home"/>
+    <item
+        android:id="@+id/ProfileNav"
+        android:enabled="true"
+        android:icon="@drawable/profile"
+        android:title="@string/Profile"/>
+    <item
+        android:id="@+id/settingNav"
+        android:enabled="true"
+        android:icon="@drawable/settings"
+        android:title="@string/Setting"/>
+</menu>

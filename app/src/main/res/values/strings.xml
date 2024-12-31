@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Recycler View</string>
+    <string name="UserApp">User App</string>
+    <string name="Home">Home\n</string>
+    <string name="Gallery">Gallery</string>
+    <string name="SlideShow">Slide Show\n</string>
+    <string name="my_name">Haidi Khattab</string>
+    <string name="my_email">Haidi@gmail.com</string>
+    <string name="PProfile">Profile</string>
+    <string name="Setting">Settings</string>
+    <string name="chang_language">ChangeLanguage</string>
+    <string name="Profile">Profile\n</string>
+    <string name="search">Search</string>
+</resources>

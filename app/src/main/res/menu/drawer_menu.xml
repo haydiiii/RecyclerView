@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="@string/Home"
+        android:icon="@drawable/home"
+        android:iconTint="@color/teal_700"/>
+    <item
+        android:id="@+id/gallery"
+        android:title="@string/Gallery"
+        android:icon="@drawable/gallery"
+        android:iconTint="@color/teal_700"/>
+    <item
+        android:id="@+id/slideShow"
+        android:title="@string/SlideShow"
+        android:icon="@drawable/slide_show"
+        android:iconTint="@color/teal_700"/>
+</menu>

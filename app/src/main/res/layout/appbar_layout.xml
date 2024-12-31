@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/UserApp"
+            app:titleCentered="true"
+            android:background="@drawable/toolbar_shae"
+            app:titleTextColor="@color/white"
+            android:padding="20dp"
+            app:navigationIcon="@drawable/menu"
+            app:menu="@menu/toolbar_menu"
+
+
+
+
+
+             />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+</layout>

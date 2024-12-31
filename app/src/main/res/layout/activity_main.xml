@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.drawerlayout.widget.DrawerLayout
+            android:id="@+id/drawerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:openDrawer="start">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include
+                    layout="@layout/appbar_layout"
+                    android:id="@+id/toolbar_layout" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_students"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            </LinearLayout>
+
+            <com.google.android.material.navigation.NavigationView
+                android:id="@+id/navigationView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                app:headerLayout="@layout/header_layout"
+                app:menu="@menu/drawer_menu"
+                app:itemIconTint="@color/teal_700" />
+        </androidx.drawerlayout.widget.DrawerLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            app:menu="@menu/navbar_menu"
+            app:itemTextColor="@drawable/bottom_nav_selector"
+            app:itemIconTint="@drawable/bottom_nav_selector" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="80dp"
+            android:layout_marginEnd="@dimen/margin_20"
+            app:backgroundTint="@color/teal_700" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
