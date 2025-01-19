@@ -21,6 +21,8 @@
             android:background="@drawable/toolbar_shae"
             app:titleTextColor="@color/white"
             android:padding="20dp"
+            style="@style/MyTextStyle"
+
             app:navigationIcon="@drawable/menu"
             app:menu="@menu/toolbar_menu"
 

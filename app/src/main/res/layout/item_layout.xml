@@ -39,6 +39,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="30dp"
                 tools:text="Name"
+                style="@style/MyTextStyle"
                 app:layout_constraintStart_toEndOf="@id/iv_user"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -49,6 +50,8 @@
                 app:layout_constraintStart_toStartOf="@id/tv_name"
                 android:layout_marginBottom="10dp"
                 tools:text="Email"
+                style="@style/MyTextStyle"
+
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_name" />
 

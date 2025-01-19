@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">عرض القائمة</string>
+    <string name="UserApp">تطبيق المستخدم</string>
+    <string name="Home">الصفحة الرئيسية\n</string>
+    <string name="Gallery">معرض الصور</string>
+    <string name="SlideShow">عرض الشرائح\n</string>
+    <string name="my_name">هايدي خطاب</string>
+    <string name="my_email">Haidi@gmail.com</string>
+    <string name="PProfile">الملف الشخصي</string>
+    <string name="Setting">الإعدادات</string>
+    <string name="chang_language">تغيير اللغة</string>
+    <string name="Profile">الملف الشخصي\n</string>
+    <string name="search">بحث</string>
+</resources>

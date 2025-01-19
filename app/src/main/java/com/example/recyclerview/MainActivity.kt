@@ -1,10 +1,16 @@
 package com.example.recyclerview
 
+import android.content.Context
+import android.content.Intent
+import android.content.res.Configuration
+import android.os.Build
+import android.os.Build.*
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.databinding.DataBindingUtil
 import com.example.recyclerview.databinding.ActivityMainBinding
+import java.util.Locale
 
 class MainActivity : ComponentActivity() {
     lateinit var binding: ActivityMainBinding
@@ -61,8 +67,7 @@ class MainActivity : ComponentActivity() {
                     true
                 }
                 R.id.change -> {
-                    Toast.makeText(this,R.string.chang_language,Toast.LENGTH_SHORT).show()
-                    binding.drawerLayout.close()
+                    updateLocale(this, "ar")
                     true
                 }
                 else -> false
@@ -70,6 +75,36 @@ class MainActivity : ComponentActivity() {
         }
 
 
+
+    }
+    fun updateLocale(context: Context, languageCode: String) {
+
+        // locale  ar  direction
+
+        val locale = Locale(languageCode)
+        Locale.setDefault(locale)
+        val config = Configuration()
+
+        if (VERSION.SDK_INT >= VERSION_CODES.N) {
+            config.setLocale(locale)
+            context.createConfigurationContext(config)
+        } else {
+            config.locale = locale
+            context.resources.updateConfiguration(config, context.resources.displayMetrics)
+        }
+
+        // Update layout direction
+        if (VERSION.SDK_INT >= VERSION_CODES.JELLY_BEAN_MR1) {
+            config.setLayoutDirection(locale)
+        }
+
+        context.resources.updateConfiguration(config, context.resources.displayMetrics)
+
+        //restart activity
+
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 }
 
